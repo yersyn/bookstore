@@ -15,15 +15,16 @@ angular.module(	'sApp',
 	//configuracion de la rutas con ui.router	 
 	$stateProvider
 
-	// .state('home',{
-	// 	url:'/',
-	// 	templateUrl:'app/Person/Highlights/sApp.person.highlights.view.html',
-	// 	controller:'cHighlights'
-	// })
+	.state('home',{
+		url:'/',
+		templateUrl:'app/Commons/Views/sApp.commons.home.view.html'
+		// ,
+		// controller:'cHighlights'
+	})
 
 	.state('error404',{
 		url:'/error404',
-		templateUrl:'app/Commons/View/sApp.commons.view.error404.html'
+		templateUrl:'404.html'
 	})
 
 	$urlRouterProvider.otherwise('/');
