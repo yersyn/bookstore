@@ -40,14 +40,91 @@
 
         <script type="text/javascript" src="app/Commons/Services/sApp.commons.service.js"></script>
 
-	<title>Bookstore --> Aplicacion de Biblioteca </title>
+	<title>Mi Biblioteca </title>
 </head>
 <body>
-  <md-toolbar class="md-warn">
-    <div class="md-toolbar-tools">
-      <h2 class="md-flex">Biblioteca TEST</center></h2>
+
+<section >
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Mi biblioteca</a>
     </div>
-  </md-toolbar>
-<marquee>Hola mundo</marquee>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seleccionar <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Autor</a></li>
+            <li><a href="#">Título</a></li>
+            <li><a href="#">Editorial</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="¿Qué desea leer hoy?">
+        </div>
+        <button type="submit" class="btn btn-default">Buscar</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Ingresar</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</section> 
+         <!--Destacados-->
+<main>        
+    <div ui-view autoscroll="false"  ng-cloak> </div>
+</main>
+
+<footer>
+    <div class="container">
+      
+        
+        <div class="col-lg-3">
+          <p>Acerca de</p>
+            <li> <a>Nuestra filosofía</a> </li>
+            <li> <a>Tendencias</a> </li> <br>
+        </div>
+        
+        <div class="col-lg-3">
+          <p>Información útil</p>
+          <li><a>Contacto & Soporte</a></li>
+          <li><a>Términos y condiciones de uso</a></li>
+          <li><a>Política de privacidad</a></li>
+        </div>
+
+        <div class="col-lg-3">
+          <p>Servicios</p>
+          <li><a>Anuncia tus servicios</a></li>
+          <li><a>Regístrate gratis</a></li>
+          <li><a>Publicidad</a></li>              
+        </div>
+        
+        <div class="col-lg-3">
+          <p>Síguenos en</p>
+          <a href="#" target="_blank"><span class="icon-facebook"></span></a>
+          <a href="#" target="_blank"><span class="icon-twitter"></span></a>
+          <a href="#" target="_blank"><span class="icon-google-plus"></span></a>
+          <a href="#" target="_blank"><span class="icon-youtube2"></span></a>
+        </div>        
+    
+  </div>
+  
+  
+  
+</footer>
+
 </body>
 </html>
